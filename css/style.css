@@ -1,0 +1,47 @@
+body{
+    background-color: lightblue;
+}
+
+
+
+.title-row {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 20px;
+    font-size: 30px;
+    font-family: "Comic Sans MS"; 
+}
+
+.title-row > div {
+    width: 33%; 
+    text-align: center;
+    position: relative;
+}
+
+
+.left-title {
+    text-align: left;
+}
+
+
+.right-title {
+    text-align: right;
+}
+
+
+.title-row > div:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 10%;
+    height: 80%;
+    width: 2px;
+    background-color: black;
+}
+ .center-image {
+  display: block;      
+  margin: 0 auto;      
+  max-width: 50%;     
+  height: auto;        
+}
